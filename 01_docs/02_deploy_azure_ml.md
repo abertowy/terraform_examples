@@ -29,3 +29,7 @@ Deploying an Azure Machine Learning (Azure ML) model typically involves these ke
         Once deployed, send test data to the endpoint to verify that your model is performing as expected and returning accurate predictions.  
     - Monitor and Manage:  
         Utilize Azure ML's monitoring capabilities to track the performance and health of your deployed model, including metrics like latency and error rates. You can also manage traffic allocation between different deployments for A/B testing or rolling updates.  
+
+Further reading: https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-deploy-model?view=azureml-api-2
+  
+**OCR**: https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-ocr 
