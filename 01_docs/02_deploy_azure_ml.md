@@ -2,19 +2,19 @@
   
 Deploying an Azure Machine Learning (Azure ML) model typically involves these key steps:
 1. Prepare Your Model and Environment:  
--- Register the Model:  
+    - Register the Model:  
     Upload your trained machine learning model to your Azure ML Workspace's model registry. This makes it available for deployment.  
--- Create an Entry Script:  
+    - Create an Entry Script:  
     Develop a Python script (often named score.py) that loads your model and defines a run() function. This function will receive input data, perform inference using your model, and return predictions.  
--- Define the Environment:  
+    - Define the Environment:  
     Create an Azure ML environment that specifies all the dependencies (Python packages, libraries) required by your model and entry script. This ensures the deployment environment matches your training environment. You can use a conda.yaml file or a Docker image.  
   
 2. Choose a Compute Target:  
     Select a Compute Type: Decide where you want to deploy your model. Common choices include:  
-    -- Online Endpoints (Managed Online Endpoints): For real-time, low-latency inferencing, suitable for web services.
-    -- Batch Endpoints: For processing large volumes of data asynchronously.
-    -- Azure Kubernetes Service (AKS): For highly scalable and customizable deployments.
-    -- Azure Container Instances (ACI): For quick, serverless deployments for development or small-scale scenarios.
+    - Online Endpoints (Managed Online Endpoints): For real-time, low-latency inferencing, suitable for web services.
+    - Batch Endpoints: For processing large volumes of data asynchronously.
+    - Azure Kubernetes Service (AKS): For highly scalable and customizable deployments.
+    - Azure Container Instances (ACI): For quick, serverless deployments for development or small-scale scenarios.
   
 3. Create and Deploy the Endpoint:  
     - Create an Endpoint:  
